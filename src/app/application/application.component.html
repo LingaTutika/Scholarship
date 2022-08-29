@@ -2,46 +2,6 @@
     <div class="card mt-5" style="align-items:center">
         <h1>Your Application</h1>
     </div>
-    <form #updateForm="ngForm" (ngSubmit)="updateScholar()" >
-                <div class="form-group">
-                    <label for="Firstname"> First Name :</label>
-                    <input type="text" #firstname [(ngModel)]="scholarToUpdate.firstname" name="firstname" class="form-control" placeholder="First Name">
-                </div>
-                <div class="form-group">
-                    <label for="Lastname"> Last Name :</label>
-                    <input type="text" #lastname [(ngModel)]="scholarToUpdate.lastname" lastname="lastname" [ngModelOptions]="{standalone: true}" class="form-control" placeholder="Last Name">
-                </div>
-                <div class="form-group">
-                    <label for="Email"> Student Email :</label>
-                    <input type="email" #email [(ngModel)]="scholarToUpdate.email" [ngModelOptions]="{standalone: true}"email="email" class="form-control" placeholder="Email">
-                </div>
-                <div class="form-group">
-                    <label for="Phone Number"> Phone Number :</label>
-                    <input type="text" #phonenumber [(ngModel)]="scholarToUpdate.phonenumber" [ngModelOptions]="{standalone: true}" phonenumber="phonenumber" class="form-control" placeholder="PhoneNumber">
-                </div>
-                <div class="form-group">
-                    <label for="collegename"> College Name :</label>
-                    <input type="text" #collegename [(ngModel)]="scholarToUpdate.collegename" [ngModelOptions]="{standalone: true}" collegename="collegename" class="form-control" placeholder="College Name">
-                </div>
-                <div class="form-group">
-                    <label for="class"> Class :</label>
-                    <input type="text" #class [(ngModel)]="scholarToUpdate.classname"  [ngModelOptions]="{standalone: true}" class="class" class="form-control" placeholder="Class">
-                </div>
-                <div class="form-group">
-                    <label for="Roll Number"> Roll Number :</label>
-                    <input type="text" #rollnumber [(ngModel)]="scholarToUpdate.rollnumber" [ngModelOptions]="{standalone: true}" rollnumber="rollnumber" class="form-control" placeholder="Roll Number">
-                </div>
-            
-                <div class="form-group">
-                    <label for="Address"> Address :</label>
-                    <input type="text" #address [(ngModel)]="scholarToUpdate.address" [ngModelOptions]="{standalone: true}" address="address" class="form-control" placeholder="Address">
-                </div>
-                <div class="form-group">
-                    <label for="State"> State :</label>
-                    <input type="text" #state [(ngModel)]="scholarToUpdate.state" [ngModelOptions]="{standalone: true}" state="state" class="form-control" placeholder="state">
-                </div>
-               
-            </form>
     
   
     <div class="mt-5">
