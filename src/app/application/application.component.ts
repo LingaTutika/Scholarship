@@ -24,19 +24,7 @@ export class ApplicationComponent implements OnInit {
   constructor(private scholarService: ScholarService) {
     this.getScholarDetails();
    }
-  register(registerForm:NgForm){
-    this.scholarService.registerScholar(registerForm.value).subscribe(
-      (resp:any)=>{
-        console.log(resp);
-        this.getScholarDetails();
-
-      },
-      (err:any)=>{
-        console.log(err);
-      }
-    );
-
-  }
+  
   getScholarDetails(){
     this.scholarService.getscholar().subscribe(
       (resp:any)=>{
