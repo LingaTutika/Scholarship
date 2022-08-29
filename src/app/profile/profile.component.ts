@@ -20,18 +20,7 @@ export class ProfileComponent implements OnInit {
   }
   
 
-  register(registerForm:NgForm){
-    this.studentService.registerStudent(registerForm.value).subscribe(
-      (resp: any) =>{
-        console.log(resp);
-        this.getStudentsDetails();
-        },
-        (err: any) => {
-        console.log(err); 
-      }
-    );
   
-  }
   getStudentsDetails(){
     this.studentService.getStudents().subscribe(
       (resp:any)=>{
