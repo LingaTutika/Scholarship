@@ -59,6 +59,4 @@ export class ProfileComponent implements OnInit {
 
 }
 
-function getStudentsDetails() {
-  throw new Error('Function not implemented.');
-}
+
